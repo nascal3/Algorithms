@@ -7,3 +7,6 @@ var containsDuplicate = function(nums) {
     }
     return false
 }
+
+const array = [10,2,30,4,5,7,83,9,4]
+containsDuplicate(array)

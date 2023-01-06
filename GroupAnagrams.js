@@ -2,6 +2,7 @@ var groupAnagrams = function(strs) {
     const groups = {}
     const arrSize = strs.length
 
+    // Loop through the array
     for (let i = 0; i < arrSize; i++) {
         // create key for each group in has map/object
         let key = strs[i].split('').sort().join('')

@@ -14,14 +14,14 @@ var topKFrequent = function(nums, k) {
         bucket.push([])
     }
 
-    // iterate through the map (bucket index = frequency  ),
+    // Iterate through the map (bucket index = frequency),
     //  adding values of frequency into the matching array   
     for (let key in frequencyMap) {
         bucket[frequencyMap[key]].push(key)
     }
 
     // loop through the bucket backwards getting only the arrays,
-    //  in bucket array that the lenght of 'K'
+    //  in bucket array that the length of 'K'
     let result = []
     for (let i = bucket.length-1; i >=0 ; i--) {
         if (bucket[i].length > 0) {

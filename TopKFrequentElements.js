@@ -31,6 +31,24 @@ var topKFrequent = function(nums, k) {
     }
 };
 
+// ###### Solution using javascript maps ######
+// function topKFrequent(nums, k) {
+    // Create a map to store the frequency of each element in the array
+
+    // const frequencyMap = new Map();
+    // for (const num of nums) {
+    //   frequencyMap.set(num, (frequencyMap.get(num) || 0) + 1);
+    // }
+  
+    // Create an array of [element, frequency] pairs, then sort it by frequency in descending order
+
+    // const sortedFrequencies = [...frequencyMap.entries()].sort((a, b) => b[1] - a[1]);
+  
+    // Return the first k elements of the sorted array
+    // return sortedFrequencies.slice(0, k);
+//   }
+  
+
 const nums = [4,1,-1,2,-1,2,3]
 const k = 2
 topKFrequent(nums, k)

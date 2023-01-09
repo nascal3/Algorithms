@@ -2,7 +2,7 @@ var productExceptSelf = function(nums) {
     // Get array length
     const numsLength = nums.length
 
-    // Put place holder to start calculation
+    // Create place holder to start calculation
     let start = 1
     // Create array to store the product calculation going forwards
     const forwardArray = []

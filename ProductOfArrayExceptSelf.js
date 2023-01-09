@@ -14,7 +14,7 @@ var productExceptSelf = function(nums) {
     
     // Create array to store the product calculation going reverse/ to also be used for result
     let reverseArray = []
-    // Create array to store the product calculation going reverse
+    // Create place holder to start calculation from the end
     let end = 1
     for (let i = numsLength - 1; i >= 0; i--) {
         // calculate product of reverse array and forward array adding it from the end of the array

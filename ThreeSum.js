@@ -44,4 +44,4 @@ var threeSum = function(nums) {
 }
 
 const numsArray = [-1,0,1,2,-1,-4]
-console.log(threeSum(numsArray))
+threeSum(numsArray)

@@ -12,13 +12,13 @@ var characterReplacement = function(s, k) {
     let right = 0
 
     // Loop through characters.
-    while (left < s.length) {
+    while (right < s.length) {
 
         // Assign character to the 'right' pointer.
         let rightChar = s[right]
 
         // Add the right pointer character to the map and track the
-        // appearance frequency
+        // appearance frequency.
         map[rightChar] = map[rightChar]+1 || 1
         // Compare between right character frequency and top frequency,
         // Assign the largest number to top frequency.
@@ -33,10 +33,10 @@ var characterReplacement = function(s, k) {
             map[leftChar]--
             left++
         }
-        //If it is not compare between longest value set and the current longest current substring you have,
+        // If it is not compare between longest value set and the current longest current substring you have,
         // then reassign it to be the current longest substring value.
         longest = Math.max(longest, (right-left+1))
-        //Increment the 'right' pointer counter
+        // Increment the 'right' pointer counter.
         right++
     }
     // Return value in the longest substring set.

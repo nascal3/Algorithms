@@ -40,7 +40,7 @@ var characterReplacement = function(s, k) {
         right++
     }
     // Return value in the longest substring set.
-    return console.log(longest)
+    return longest
 };
 
 const string = "ABAB"

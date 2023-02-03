@@ -12,7 +12,7 @@ var characterReplacement = function(s, k) {
     let right = 0
 
     // Loop through characters.
-    while (left < s.length) {
+    while (right < s.length) {
 
         // Assign character to the 'right' pointer.
         let rightChar = s[right]
@@ -40,7 +40,7 @@ var characterReplacement = function(s, k) {
         right++
     }
     // Return value in the longest substring set.
-    return longest
+    return console.log(longest)
 };
 
 const string = "ABAB"

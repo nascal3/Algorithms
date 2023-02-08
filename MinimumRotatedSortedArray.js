@@ -25,4 +25,4 @@ var findMin = function(nums) {
 };
 
 const number = [3,4,5,1,2]
-console.log(findMin(number))
+findMin(number)

@@ -26,7 +26,6 @@ var reverseList = function(head) {
 
     // Return previous
     return prev
-    // console.log(prev);
 }
 
 

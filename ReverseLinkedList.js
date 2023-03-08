@@ -14,14 +14,14 @@ var reverseList = function(head) {
 
     // Loop through the list
     while (cur !== null) {
-        // Set next point to current.next.
-         next = cur.next
-         // Set current.next point to previuos.
-         cur.next = prev
-         // Set previous to point to current.
-         prev = cur
-         // Set current to point to next.
-         cur = next 
+    // Set next point to current.next.
+        next = cur.next
+        // Set current.next point to previous.
+        cur.next = prev
+        // Set previous to point to current.
+        prev = cur
+        // Set current to point to next.
+        cur = next 
     }
 
     // Return previous
